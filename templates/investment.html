@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Investment Indicators</h2>
+<p><strong>Definition:</strong> Investment indicators provide insights into the allocation of resources towards the production of goods and services in the future, and are essential for understanding economic growth and productivity.</p>
+
+<h3>Importance:</h3>
+<p>Investment indicators are crucial for understanding economic growth, productivity, and future economic potential. They influence policy decisions and investment strategies.</p>
+
+<p>{{ source }}</p>
+
+<h3>Metrics and Visualizations:</h3>
+
+<h4>Gross Capital Formation (Annual Growth %)</h4>
+<p><strong>Definition:</strong> Gross capital formation, also known as gross domestic investment, measures the annual increase in physical assets such as buildings, machinery, and equipment.</p>
+<p><strong>Explanation:</strong> The line chart below shows the annual growth rate of gross capital formation, indicating the rate at which new physical assets are being added to the economy.</p>
+<div id="graph_gross_capital_formation_growth"></div>
+
+<h4>Foreign Direct Investment (FDI), Net Inflows (% of GDP)</h4>
+<p><strong>Definition:</strong> Foreign Direct Investment (FDI) net inflows refer to the value of inward direct investment made by non-resident investors in the reporting economy, expressed as a percentage of GDP.</p>
+<p><strong>Explanation:</strong> The line chart below illustrates the net inflows of FDI as a percentage of GDP, providing insights into the attractiveness of the economy to foreign investors.</p>
+<div id="graph_fdi_net_inflows"></div>
+
+<h4>Gross Fixed Capital Formation (% of GDP)</h4>
+<p><strong>Definition:</strong> Gross fixed capital formation measures the value of acquisitions of new or existing fixed assets by the business sector, governments, and households (less disposals) as a percentage of GDP.</p>
+<p><strong>Explanation:</strong> The line chart below shows the gross fixed capital formation as a percentage of GDP, indicating the level of investment in fixed assets.</p>
+<div id="graph_gross_fixed_capital_formation"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Plotly.newPlot('graph_gross_capital_formation_growth', JSON.parse('{{ graph_gross_capital_formation_growth | safe }}'));
+        Plotly.newPlot('graph_fdi_net_inflows', JSON.parse('{{ graph_fdi_net_inflows | safe }}'));
+        Plotly.newPlot('graph_gross_fixed_capital_formation', JSON.parse('{{ graph_gross_fixed_capital_formation | safe }}'));
+    });
+</script>
+{% endblock %}
