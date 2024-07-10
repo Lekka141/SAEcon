@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Poverty and Inequality Indicators</h2>
+<p><strong>Definition:</strong> Poverty and inequality indicators provide insights into the distribution of wealth and the economic well-being of a population.</p>
+
+<h3>Importance:</h3>
+<p>Poverty and inequality metrics are crucial for understanding the economic disparities within a country. They help in formulating policies to reduce poverty and improve income distribution.</p>
+
+<p>{{ source }}</p>
+
+<h3>Metrics and Visualizations:</h3>
+
+<h4>Gini Index</h4>
+<p><strong>Definition:</strong> The Gini Index is a measure of income inequality within a population, ranging from 0 (perfect equality) to 100 (perfect inequality).</p>
+<p><strong>Explanation:</strong> The line chart below shows the trends in the Gini Index over time, indicating changes in income inequality.</p>
+<div id="graph_gini_index"></div>
+
+<h4>Poverty Headcount Ratio at $2.15 a Day (2017 PPP) (% of Population)</h4>
+<p><strong>Definition:</strong> This metric measures the percentage of the population living on less than $2.15 a day at 2017 international prices, adjusted for purchasing power parity (PPP).</p>
+<p><strong>Explanation:</strong> The line chart below shows the trends in poverty headcount ratio at $2.15 a day, indicating the proportion of the population living in extreme poverty.</p>
+<div id="graph_poverty_2_15"></div>
+
+<h4>Poverty Headcount Ratio at National Poverty Lines (% of Population)</h4>
+<p><strong>Definition:</strong> This metric measures the percentage of the population living below the national poverty line, which varies by country.</p>
+<p><strong>Explanation:</strong> The line chart below shows the trends in poverty headcount ratio at national poverty lines, indicating the proportion of the population living in poverty according to national standards.</p>
+<div id="graph_poverty_national"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Plotly.newPlot('graph_gini_index', JSON.parse('{{ graph_gini_index | safe }}'));
+        Plotly.newPlot('graph_poverty_2_15', JSON.parse('{{ graph_poverty_2_15 | safe }}'));
+        Plotly.newPlot('graph_poverty_national', JSON.parse('{{ graph_poverty_national | safe }}'));
+    });
+</script>
+{% endblock %}
