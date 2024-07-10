@@ -45,11 +45,6 @@ Contributing
     Push to the branch (git push origin feature/AmazingFeature)
     Open a Pull Request.
 
-## Licensing
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
-Technical Details and Project Story
-
 ## The idea:
 
 SAEcon started as a vision to simplify the understanding of South Africa's complex economic landscape. Inspired by the need for accessible data visualization tools, this project aims to bring clarity to the vast amounts of economic data available.
@@ -71,3 +66,7 @@ Conclusion
 
 SAEcon is more than just an application; it's a tool designed to empower users with knowledge and insights. We hope that this project inspires others to explore the world of data visualization and economic analysis.
 
+## Licensing
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+Technical Details and Project Story
