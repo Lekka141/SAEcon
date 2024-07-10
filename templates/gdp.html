@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Gross Domestic Product (GDP)</h2>
+<p><strong>Definition:</strong> Gross Domestic Product (GDP) represents the total value of all goods and services produced over a specific time period within a country's borders. It is a broad measure of a nation’s overall economic activity.</p>
+
+<h3>Importance:</h3>
+<p>GDP is crucial as it provides an economic snapshot of a country, offering insight into the economic health, growth, and productivity. It helps policymakers, investors, and analysts to make informed decisions about investments, economic policy, and resource allocation.</p>
+
+<p>{{ source }}</p>
+
+<h3>Metrics and Visualizations:</h3>
+
+<h4>GDP (Current USD)</h4>
+<p><strong>Definition:</strong> GDP (Current USD) measures the market value of all final goods and services produced in a country in a given year, expressed in current US dollars. This metric provides a broad indication of the country's overall economic activity and its position in the global economy.</p>
+<p><strong>Explanation:</strong> The bar chart below shows the GDP in current US dollars for each year. This visualization helps to identify the trends and changes in the economic activity over time, reflecting the economic growth or contraction of the country.</p>
+<div id="graph_gdp_current_usd"></div>
+
+<h4>GDP Growth Rate (Annual %)</h4>
+<p><strong>Definition:</strong> The GDP Growth Rate indicates the annual percentage increase in the GDP. It is a key indicator of economic health, showing how quickly the economy is growing or shrinking.</p>
+<p><strong>Explanation:</strong> The line chart below depicts the annual growth rate of GDP. This visualization helps to understand the economic growth trends over the years, highlighting periods of economic boom or recession.</p>
+<div id="graph_gdp_growth"></div>
+
+<h4>GDP Per Capita (Current USD)</h4>
+<p><strong>Definition:</strong> GDP Per Capita is the GDP divided by the population, indicating the average economic output per person. It provides a measure of the economic well-being of the average citizen in the country.</p>
+<p><strong>Explanation:</strong> The line chart below illustrates the GDP per capita over the years. This visualization helps to assess the standard of living and economic prosperity of individuals in the country.</p>
+<div id="graph_gdp_per_capita"></div>
+
+<h4>GDP Per Unit of Energy Use (PPP per kg of oil equivalent)</h4>
+<p><strong>Definition:</strong> GDP Per Unit of Energy Use measures the GDP produced per unit of energy used, indicating the energy efficiency of the economy. Higher values suggest better energy efficiency and more sustainable economic activity.</p>
+<p><strong>Explanation:</strong> The line chart below shows the GDP per unit of energy use over time. This visualization helps to evaluate the efficiency and sustainability of the economy's energy usage.</p>
+<div id="graph_gdp_per_energy"></div>
+
+<h4>GDP Deflator</h4>
+<p><strong>Definition:</strong> The GDP Deflator reflects the price level of all new, domestically produced, final goods and services in an economy. It is a measure of inflation within the economy and helps to adjust nominal GDP to real GDP.</p>
+<p><strong>Explanation:</strong> The line chart below presents the GDP deflator over the years. This visualization helps to understand the inflationary trends and the overall price level changes in the economy.</p>
+<div id="graph_gdp_deflator"></div>
+
+<h4>Sectoral Contribution to GDP</h4>
+<p><strong>Definition:</strong> This metric shows the contribution of different economic sectors to the overall GDP, expressed as a percentage. It helps to understand the structure of the economy and the relative importance of each sector.</p>
+<p><strong>Explanation:</strong> The pie chart below illustrates the sectoral contribution to GDP. This visualization helps to identify the major sectors driving the economy and their relative sizes.</p>
+<div id="graph_sectoral_gdp"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Plotly.newPlot('graph_gdp_current_usd', JSON.parse('{{ graph_gdp_current_usd | safe }}'));
+        Plotly.newPlot('graph_gdp_growth', JSON.parse('{{ graph_gdp_growth | safe }}'));
+        Plotly.newPlot('graph_gdp_per_capita', JSON.parse('{{ graph_gdp_per_capita | safe }}'));
+        Plotly.newPlot('graph_gdp_per_energy', JSON.parse('{{ graph_gdp_per_energy | safe }}'));
+        Plotly.newPlot('graph_gdp_deflator', JSON.parse('{{ graph_gdp_deflator | safe }}'));
+        Plotly.newPlot('graph_sectoral_gdp', JSON.parse('{{ graph_sectoral_gdp | safe }}'));
+    });
+</script>
+{% endblock %}
