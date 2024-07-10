@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Inflation Indicators</h2>
+<p><strong>Definition:</strong> Inflation indicators provide insights into the rate at which the general level of prices for goods and services is rising, and subsequently, how purchasing power is falling.</p>
+
+<h3>Importance:</h3>
+<p>Inflation indicators are crucial for understanding the economic environment, as they affect the cost of living, purchasing power, and economic policy decisions.</p>
+
+<p>{{ source }}</p>
+
+<h3>Metrics and Visualizations:</h3>
+
+<h4>Inflation, Consumer Prices (Annual %)</h4>
+<p><strong>Definition:</strong> This metric measures the annual percentage change in the cost of a basket of goods and services typically purchased by households.</p>
+<p><strong>Explanation:</strong> The line chart below shows the annual inflation rate for consumer prices over the years, helping to understand the trends in the cost of living.</p>
+<div id="graph_inflation_consumer_prices"></div>
+
+<h4>Inflation, GDP Deflator (Annual %)</h4>
+<p><strong>Definition:</strong> The GDP deflator is a measure of the level of prices of all new, domestically produced, final goods and services in an economy.</p>
+<p><strong>Explanation:</strong> The line chart below illustrates the annual percentage change in the GDP deflator, providing insights into the overall price level changes in the economy.</p>
+<div id="graph_inflation_gdp_deflator"></div>
+
+<h4>Consumer Price Index (2010 = 100)</h4>
+<p><strong>Definition:</strong> The Consumer Price Index (CPI) measures the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services, with 2010 as the base year.</p>
+<p><strong>Explanation:</strong> The line chart below shows the trend in the CPI, indicating changes in the price level over time.</p>
+<div id="graph_consumer_price_index"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Plotly.newPlot('graph_inflation_consumer_prices', JSON.parse('{{ graph_inflation_consumer_prices | safe }}'));
+        Plotly.newPlot('graph_inflation_gdp_deflator', JSON.parse('{{ graph_inflation_gdp_deflator | safe }}'));
+        Plotly.newPlot('graph_consumer_price_index', JSON.parse('{{ graph_consumer_price_index | safe }}'));
+    });
+</script>
+{% endblock %}
