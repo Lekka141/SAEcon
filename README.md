@@ -13,7 +13,7 @@ SAEcon provides an intuitive platform for exploring and understanding South Afri
 
 ## Screenshot
 
-![SAEcon Screenshot](./static/images/screenshot.png)
+![SAEcon Screenshot](/static/images/screenshot.png)
 
 ## Installation
 
@@ -58,7 +58,7 @@ Challenges and Solutions
 One of the main challenges was handling the large and diverse datasets. We leveraged the power of Pandas for data manipulation and Plotly Express for creating interactive and visually appealing charts. Flask was chosen as the web framework for its simplicity and robustness.
 Future Iterations
 
-## In future iterations, we plan to:
+## In future iterations, I plan to:
 
 - Add more economic indicators and data sources.
 - Improve the interactivity and usability of the charts.
@@ -69,4 +69,5 @@ Future Iterations
 Creating SAEcon was a journey filled with learning and growth. From dealing with data inconsistencies to optimizing the performance of the visualizations, each step was a valuable experience. The project showcases not just technical skills but also the ability to think critically and solve complex problems.
 Conclusion
 
-SAEcon is more than just an application; it's a tool designed to empower users with knowledge and insights. We hope that this project inspires others to explore the world of data visualization and economic analysis.
+SAEcon is more than just an application; it's a tool designed to empower users with knowledge and insights. We hope that this project inspires others to explore the world of data visualization and economic analysis.
+
