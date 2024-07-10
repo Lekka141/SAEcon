@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Health Indicators</h2>
+<p><strong>Definition:</strong> Health indicators provide insights into the health status of a population, healthcare access, and outcomes, including mortality rates, disease prevalence, and healthcare expenditure.</p>
+
+<h3>Importance:</h3>
+<p>Health indicators are crucial for understanding the overall well-being of a population, identifying health disparities, and informing healthcare policies and interventions.</p>
+
+<p>{{ source }}</p>
+
+<h3>Metrics and Visualizations:</h3>
+
+<h4>Life Expectancy at Birth (Years)</h4>
+<p><strong>Definition:</strong> Life expectancy at birth is the average number of years a newborn is expected to live if current mortality rates continue to apply.</p>
+<p><strong>Explanation:</strong> The line chart below shows the trend in life expectancy at birth for males, females, and the total population over the years. This visualization helps to understand the health improvements and disparities within the population.</p>
+<div id="graph_life_expectancy"></div>
+
+<h4>Infant Mortality Rate (Per 1,000 Live Births)</h4>
+<p><strong>Definition:</strong> The infant mortality rate is the number of deaths of infants under one year old per 1,000 live births in a given year.</p>
+<p><strong>Explanation:</strong> The line chart below illustrates the trend in infant mortality rates over the years. This visualization helps to understand the improvements or challenges in reducing infant mortality.</p>
+<div id="graph_infant_mortality"></div>
+
+<h4>Health Expenditure Per Capita (Current USD)</h4>
+<p><strong>Definition:</strong> Health expenditure per capita represents the total health expenditure (public and private) divided by the population, expressed in current US dollars.</p>
+<p><strong>Explanation:</strong> The line chart below shows the trend in health expenditure per capita over the years. This visualization helps to understand the financial resources allocated to healthcare relative to the population size.</p>
+<div id="graph_health_expenditure"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Plotly.newPlot('graph_life_expectancy', JSON.parse('{{ graph_life_expectancy | safe }}'));
+        Plotly.newPlot('graph_infant_mortality', JSON.parse('{{ graph_infant_mortality | safe }}'));
+        Plotly.newPlot('graph_health_expenditure', JSON.parse('{{ graph_health_expenditure | safe }}'));
+    });
+</script>
+{% endblock %}
