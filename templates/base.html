@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South African Economy Visualiser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        <h1>South African Economy Visualizer</h1>
+    </header>
+    <nav>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('gdp.gdp') }}">GDP</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('inflation.inflation') }}">Inflation</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('trade.trade') }}">Trade</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('fiscal.fiscal') }}">Fiscal</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('monetary.monetary') }}">Monetary</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('investment.investment') }}">Investment</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('poverty.poverty') }}">Poverty</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('health.health') }}">Health</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('environment.environment') }}">Environment</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('demographics.demographics') }}">Demographics</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer>
+        <p>&copy; 2024 South African Economy Visualizer</p>
+    </footer>
+</body>
+</html>
