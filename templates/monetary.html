@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Monetary Indicators</h2>
+<p><strong>Definition:</strong> Monetary indicators provide insights into the financial health and stability of an economy, focusing on aspects such as interest rates, money supply, and credit.</p>
+
+<h3>Importance:</h3>
+<p>Monetary indicators are crucial for understanding the financial stability and liquidity in the economy. They influence policy decisions, investment strategies, and economic forecasting.</p>
+
+<p>{{ source }}</p>
+
+<h3>Metrics and Visualizations:</h3>
+
+<h4>Deposit Interest Rate (%)</h4>
+<p><strong>Definition:</strong> The deposit interest rate is the rate paid by banks or other financial institutions to deposit account holders.</p>
+<p><strong>Explanation:</strong> The line chart below shows the trends in deposit interest rates over time, providing insights into savings incentives and financial market conditions.</p>
+<div id="graph_deposit_interest_rate"></div>
+
+<h4>Domestic Credit Provided by Financial Sector (% of GDP)</h4>
+<p><strong>Definition:</strong> This metric measures the total credit extended by financial institutions to various sectors of the economy, expressed as a percentage of GDP.</p>
+<p><strong>Explanation:</strong> The line chart below shows the level of domestic credit provided by the financial sector, indicating the availability of credit and financial depth.</p>
+<div id="graph_domestic_credit_financial_sector"></div>
+
+<h4>Real Interest Rate (%)</h4>
+<p><strong>Definition:</strong> The real interest rate adjusts the nominal interest rate for inflation, reflecting the true cost of borrowing and the real return on savings.</p>
+<p><strong>Explanation:</strong> The line chart below illustrates the trends in real interest rates, providing insights into the real cost of borrowing and lending in the economy.</p>
+<div id="graph_real_interest_rate"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Plotly.newPlot('graph_deposit_interest_rate', JSON.parse('{{ graph_deposit_interest_rate | safe }}'));
+        Plotly.newPlot('graph_domestic_credit_financial_sector', JSON.parse('{{ graph_domestic_credit_financial_sector | safe }}'));
+        Plotly.newPlot('graph_real_interest_rate', JSON.parse('{{ graph_real_interest_rate | safe }}'));
+    });
+</script>
+{% endblock %}
