@@ -1,5 +1,5 @@
 # Use the official Python image from Docker Hub
-FROM python:3.12-slim
+FROM python:3.10-slim
 
 # Set the working directory in the container
 WORKDIR /app
@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 RUN python3 -m ensurepip --upgrade
 
 # Upgrade pip, setuptools, and wheel to specific versions
-RUN pip install --upgrade pip setuptools==59.6.0 wheel
+RUN pip install --upgrade pip setuptools==57.5.0 wheel
 
 # Copy the requirements.txt into the container
 COPY requirements.txt .
@@ -36,4 +36,4 @@ COPY . .
 EXPOSE 80
 
 # Command to run the app
-CMD ["gunicorn", "--workers=3", "--bind=0.0.0.0:80", "app:app"]
+CMD ["gunicorn", "--workers=3", "--bind=0.0.0.0:80", "--timeout=120", "app:app"]
