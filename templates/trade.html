@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Trade</h2>
+<p><strong>Definition:</strong> Trade represents the exchange of goods and services between countries. It includes exports, imports, and the balance of trade.</p>
+
+<h3>Importance:</h3>
+<p>Trade is a crucial component of a country's economy, influencing economic growth, job creation, and consumer prices. Understanding trade metrics helps policymakers, economists, and business leaders make informed decisions about trade policies, investments, and market strategies.</p>
+
+<p>{{ source }}</p>
+
+<h3>Metrics and Visualizations:</h3>
+
+<h4>Exports Growth Rate (Annual %)</h4>
+<p><strong>Definition:</strong> The Exports Growth Rate measures the annual percentage increase in the value of goods and services sold abroad. This metric provides insights into the performance and competitiveness of a country's export sector.</p>
+<p><strong>Explanation:</strong> The line chart below depicts the annual growth rate of exports. This visualization helps to understand the trends in export growth over the years, highlighting periods of expansion or contraction in the export sector.</p>
+<div id="graph_exports_growth"></div>
+
+<h4>Imports Growth Rate (Annual %)</h4>
+<p><strong>Definition:</strong> The Imports Growth Rate measures the annual percentage increase in the value of goods and services purchased from abroad. This metric indicates the demand for foreign goods and services and the integration of the domestic economy with global markets.</p>
+<p><strong>Explanation:</strong> The line chart below shows the annual growth rate of imports. This visualization helps to track the changes in import activity over time, reflecting economic conditions and consumer demand.</p>
+<div id="graph_imports_growth"></div>
+
+<h4>Exports of Goods and Services (Current USD)</h4>
+<p><strong>Definition:</strong> Exports of Goods and Services (Current USD) measure the market value of all goods and services produced within a country and sold abroad in a given year, expressed in current US dollars.</p>
+<p><strong>Explanation:</strong> The bar chart below shows the exports in current US dollars for each year. This visualization helps to identify the trends and changes in the country's export activity over time, reflecting the country's performance in international trade.</p>
+<div id="graph_exports_usd"></div>
+
+<h4>Imports of Goods and Services (Current USD)</h4>
+<p><strong>Definition:</strong> Imports of Goods and Services (Current USD) measure the market value of all goods and services purchased from abroad in a given year, expressed in current US dollars.</p>
+<p><strong>Explanation:</strong> The bar chart below depicts the imports in current US dollars for each year. This visualization helps to understand the trends and changes in the country's import activity over time, indicating the level of demand for foreign goods and services.</p>
+<div id="graph_imports_usd"></div>
+
+<h4>Trade as a Percentage of GDP</h4>
+<p><strong>Definition:</strong> Trade as a Percentage of GDP represents the total value of a country's exports and imports of goods and services expressed as a percentage of its Gross Domestic Product (GDP). It is an indicator of the degree of openness of an economy.</p>
+<p><strong>Explanation:</strong> The line chart below illustrates trade as a percentage of GDP over the years. This visualization helps to evaluate the relative importance of international trade in the economy and how it has evolved over time.</p>
+<div id="graph_trade_gdp"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Plotly.newPlot('graph_exports_growth', JSON.parse('{{ graph_exports_growth | safe }}'));
+        Plotly.newPlot('graph_imports_growth', JSON.parse('{{ graph_imports_growth | safe }}'));
+        Plotly.newPlot('graph_exports_usd', JSON.parse('{{ graph_exports_usd | safe }}'));
+        Plotly.newPlot('graph_imports_usd', JSON.parse('{{ graph_imports_usd | safe }}'));
+        Plotly.newPlot('graph_trade_gdp', JSON.parse('{{ graph_trade_gdp | safe }}'));
+    });
+</script>
+{% endblock %}
