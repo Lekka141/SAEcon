@@ -1,0 +1,19 @@
+DataType,FootnoteNo,Footnote
+IMFBC,1,Employment in the non-agricultural sectors. 
+IMFBC,2,Sources of basic data : Labour force survey by Statistics South Africa. 
+IMFBC,3,Remuneration per worker at current prices in the non-agricultural sectors. 
+IMFFS,4,"Includes the debt and liabilities of the former TBVC-countries and self-governing states that were assumed by the national government in terms of Section 230 of the second Amendment Bill of the Constitution of the Republic of South Africa, as well as the liability assumed for the payment of the debts incurred by the Republic of Namibia as contemplated in Subsection (1) of Section 52C of the Exchequer Act No 66 of 1975, as amended. "
+IMFSFI,5,Notes and coin in circulation outside the monetary sector plus all deposits of the private sector with the monetary sector. 
+IMFSFI,6,Notes and coin in circulation outside the SARB plus required reserve balances of banks and mutual banks with the SARB. 
+IMFES,7,"The Reserve Bank disseminates all the main components of the balance of payments as prescribed by the sixth edition of the IMF's ""Balance of Payments Manual"". "
+IMFES,8,"Gross current transfer receipts and gross current transfer payments, as described in the sixth edition of the IMF's ""Balance of Payments Manual"". "
+IMFES,9,Including reserve assets but excluding unrecorded transactions. 
+IMFES,10,Total gross foreign reserves of the Reserve Bank. Balance as at the end of the month. 
+IMFES,11,Monthly average exchange rate against the twenty most important currencies. 
+IMFPO,12,The mid-year estimates are based on the 2011 population census. The census for 2011 yielded an estimated population of 51.6 million people. 
+IMFES,13,Preliminary figures from South African Revenue Services; not adjusted for Balance of Payments purposes. 
+IMFFS,14,Amounts recorded in the accounts of National Treasury are kept constant for the following three months. 
+IMFBC,15,"This information is obtained from a discussion document published by Statistics South Africa. For more information visit <a href=""http://www.statssa.gov.za"">STATSSA <a/>. "
+IMFBC,16,"Components revised. See ""Note on the revision of composite leading and coincident business cycle indicators"" in the March 2004 Quarterly Bulletin. Previous and new indices were linked in January 1994. "
+IMFBC,17,"The dissemination of these data categories is delayed due to the public health emergency in South Africa caused by the Covid-19 pandemic. A media release by the South African Reserve Bank (SARB) on the 25th of May 2020 provides more information on the impact of the pandemic in the collection as well as dissemination of economic statistics and it can be found on the following <a href=""https://www.resbank.co.za/en/home/publications/publication-detail-pages/media-releases/2020/9951"">link</a>. "
+IMFBC,18,"A Press Statement by Statistics South Africa (Stats SA) on the 17th of April 2020 provide more information regarding the impact of Covid-19 pandemic on the collection and dissemination of economic statistics in South Africa; and it can be found on the following <a href=""http://www.statssa.gov.za/?p=13224"""">link</a>. "

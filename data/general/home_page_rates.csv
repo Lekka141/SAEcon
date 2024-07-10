@@ -1,0 +1,14 @@
+Name,SectionId,SectionName,TimeseriesCode,Date,Value,UpDown,FormatNumber,FormatDate
+CPI,HPRIR,Inflation rates,CPI1000F,2024-05-31,5.2,0,0.0,"MMM, yyyy"
+PPI,HPRIR,Inflation rates,PPI1000F,2024-04-30,5.144,1,0.0,"MMM, yyyy"
+Repo rate,HPRINT,Interest rates,MMRD002A,2024-06-25,8.25,0,0.00,yyyy-MM-dd
+Prime lending rate,HPRINT,Interest rates,MMRD001A,2024-06-25,11.75,0,0.00,yyyy-MM-dd
+8.00% 2030 (R2030) (closing yields),HPRINT,Interest rates,MMRD708A,2024-06-24,9.8,1,0.00,yyyy-MM-dd
+"10,5% 2026 (R186) (closing yields)",HPRINT,Interest rates,MMRD704A,2024-06-24,8.695,1,0.00,yyyy-MM-dd
+Sabor,HPRINT,Interest rates,MMRD851A,2024-06-24,8.196,-1,0.000,yyyy-MM-dd
+Zaronia,HPRINT,Interest rates,MMRD855A,2024-06-24,8.134,1,0.000,yyyy-MM-dd
+Rand per US Dollar,HPREXCH,Exchange rates,EXCX135D,2024-06-25,18.1416,1,0.0000,yyyy-MM-dd
+Rand per British Pound,HPREXCH,Exchange rates,EXCZ001D,2024-06-25,23.0353,1,0.0000,yyyy-MM-dd
+Rand per Euro,HPREXCH,Exchange rates,EXCZ002D,2024-06-25,19.4677,1,0.0000,yyyy-MM-dd
+Rand per Japanese Yen,HPREXCH,Exchange rates,EXCZ120D,2024-06-25,0.1137,1,0.0000,yyyy-MM-dd
+Nominal effective exchange rate,HPRNEE,Nominal Effective,EER4504A,2024-06-25,80.2953,-1,0.00,yyyy-MM-dd

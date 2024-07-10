@@ -1,0 +1,4 @@
+Name,SectionId,SectionName,TimeseriesCode,Date,Value,UpDown,FormatNumber,FormatDate
+Nominal effective exchange rate against the most important currencies (Index: 2015=100),HEMER,Selected exchange rates,BOP5393M,2022/12/31 00:00:00,81.7309,1,0.00,"MMM, yyyy"
+Real effective rate against the most important currencies (Index: 2015=100),HEMER,Selected exchange rates,BOP5395M,2022/12/31 00:00:00,107.8046,1,0.00,"MMM,yyyy"
+Real prime lending rate,HEMOIR,Other interest rates,MMSM001R,2022/12/31 00:00:00,3.0784,-1,0.00,"MMM, yyyy"

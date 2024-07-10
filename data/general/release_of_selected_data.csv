@@ -1,0 +1,18 @@
+DataType,Indicator,LatestDate,LastPeriod
+MRDMA,Money and banking,"Apr, 2024",2024-06-07
+MRDBM,Banks and mutual banks,"Apr, 2024",2024-05-31
+MRDIE,International economic data,"Apr, 2024",2024-06-07
+MRDCM,Capital market,"May, 2024",2024-06-24
+MRDFG,National government finance,"Apr, 2024",2024-05-30
+MRDEI,Economic indicators (seasonally adjusted),"Jun, 2024",2024-06-25
+MRGMA,Money and banking graphs,"Apr, 2024",2024-06-19
+MRGIE,International economic data graphs,"Apr, 2024",2024-05-31
+MRGCM,Capital market graphs,"May, 2024",2024-06-24
+MRGFG,National government finance graphs,"Apr, 2024",2024-05-30
+MRGEI,Economic indicators graphs,"Jun, 2024",2024-06-25
+CDACSQ,Credit detail (Quarterly),"Mar, 2024",2024-05-28
+CDACSM,Credit detail (Monthly),"Apr, 2024",2024-05-31
+CDASA,Seasonally adjusted credit aggregates,"Apr, 2024",2024-05-31
+CDADS,Deposit detail,"Apr, 2024",2024-05-31
+CDACA,Securitisation,"Apr, 2024",2024-05-31
+CDACM3,Counterparts of M3 (levels),"Apr, 2024",2024-05-31

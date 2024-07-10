@@ -1,0 +1,33 @@
+Name,SectionId,SectionName,TimeseriesCode,Date,Value,UpDown,FormatNumber,FormatDate
+Rand per US Dollar,HERRER,Selected exchange rates,EXCX135D,2024/06/25 00:00:00,18.1416,1,0.0000,yyyy-MM-dd
+Rand per British Pound,HERRER,Selected exchange rates,EXCZ001D,2024/06/25 00:00:00,23.0353,1,0.0000,yyyy-MM-dd
+Rand per Euro,HERRER,Selected exchange rates,EXCZ002D,2024/06/25 00:00:00,19.4677,1,0.0000,yyyy-MM-dd
+Australia: Dollar per Rand,HERRER,Selected exchange rates,EXCB080D,2024/06/25 00:00:00,0.0827,-1,0.0000,yyyy-MM-dd
+Botswana: Pula per Rand,HERRER,Selected exchange rates,EXCB051D,2024/06/25 00:00:00,0.7469,-1,0.0000,yyyy-MM-dd
+Brazil: Real per Rand,HERRER,Selected exchange rates,EXCB036D,2024/06/25 00:00:00,0.2971,-1,0.0000,yyyy-MM-dd
+Canada: Dollar per Rand,HERRER,Selected exchange rates,EXCB031D,2024/06/25 00:00:00,0.0752,-1,0.0000,yyyy-MM-dd
+China: Yuan per Rand,HERRER,Selected exchange rates,EXCB121D,2024/06/25 00:00:00,0.4003,-1,0.0000,yyyy-MM-dd
+Denmark: Krone per Rand,HERRER,Selected exchange rates,EXCB003D,2024/06/25 00:00:00,0.3832,-1,0.0000,yyyy-MM-dd
+Hong Kong: Dollar per Rand,HERRER,Selected exchange rates,EXCB122D,2024/06/25 00:00:00,0.4304,-1,0.0000,yyyy-MM-dd
+India: Rupee per Rand,HERRER,Selected exchange rates,EXCB123D,2024/06/25 00:00:00,4.5993,-1,0.0000,yyyy-MM-dd
+Israel: Shekel per Rand,HERRER,Selected exchange rates,EXCB094D,2024/06/25 00:00:00,0.2051,-1,0.0000,yyyy-MM-dd
+Japan: Yen per Rand,HERRER,Selected exchange rates,EXCB120D,2024/06/25 00:00:00,8.7917,-1,0.0000,yyyy-MM-dd
+Malawi: Kwacha per Rand,HERRER,Selected exchange rates,EXCB063D,2024/06/25 00:00:00,95.5741,-1,0.0000,yyyy-MM-dd
+New Zealand: Dollar per Rand,HERRER,Selected exchange rates,EXCB081D,2024/06/25 00:00:00,0.09,-1,0.0000,yyyy-MM-dd
+Norway: Krone per Rand,HERRER,Selected exchange rates,EXCB013D,2024/06/25 00:00:00,0.581,-1,0.0000,yyyy-MM-dd
+Russia: Rouble per Rand,HERRER,Selected exchange rates,EXCB110D,2024/06/25 00:00:00,4.7796,1,0.0000,yyyy-MM-dd
+Sweden: Krona per Rand,HERRER,Selected exchange rates,EXCB015D,2024/06/25 00:00:00,0.5773,-1,0.0000,yyyy-MM-dd
+Switzerland: Franc per Rand,HERRER,Selected exchange rates,EXCB016D,2024/06/25 00:00:00,0.0493,-1,0.0000,yyyy-MM-dd
+Taiwan: NT Dollar per Rand,HERRER,Selected exchange rates,EXCB126D,2024/06/25 00:00:00,1.7888,-1,0.0000,yyyy-MM-dd
+Thailand: Baht per Rand,HERRER,Selected exchange rates,EXCB115D,2024/06/25 00:00:00,2.0186,-1,0.0000,yyyy-MM-dd
+Zambia: Kwacha per Rand,HERRER,Selected exchange rates,EXCB071D,2024/06/25 00:00:00,1.418,1,0.0000,yyyy-MM-dd
+South Korea: Won per Rand,HERRER,Selected exchange rates,EXCB118D,2024/06/25 00:00:00,76.6149,-1,0.0000,yyyy-MM-dd
+Nominal effective exchange rate,HERRER,Selected exchange rates,EER4504A,2024/06/25 00:00:00,80.2953,-1,0.00,yyyy-MM-dd
+Euro per US dollar Middle rate,HEROER,Exchange rates for other currencies,EXCX010D,2024/06/25 00:00:00,0.9319,-1,0.0000,yyyy-MM-dd
+US dollar per pound sterling Middle rate,HEROER,Exchange rates for other currencies,EXCX001D,2024/06/25 00:00:00,1.2698,1,0.0000,yyyy-MM-dd
+US dollar per Australian dollar Middle rate,HEROER,Exchange rates for other currencies,EXCX080D,2024/06/25 00:00:00,0.6668,1,0.0000,yyyy-MM-dd
+Swiss franc per US dollar Middle rate,HEROER,Exchange rates for other currencies,EXCX016D,2024/06/25 00:00:00,0.8938,1,0.0000,yyyy-MM-dd
+Repo rate,HEROIR,Other interest rates,MMRD002A,2024/06/25 00:00:00,8.25,0,0.00,yyyy-MM-dd
+Prime lending rate,HEROIR,Other interest rates,MMRD001A,2024/06/25 00:00:00,11.75,0,0.00,yyyy-MM-dd
+Interbank rate,HEROIR,Other interest rates,MMRD950A,2024/06/25 00:00:00,6.75,0,0.00,yyyy-MM-dd
+Treasury bills - 91 day (tender rates),HEROIR,Other interest rates,MMRD203A,2024/06/24 00:00:00,8.52,-1,0.00,yyyy-MM-dd

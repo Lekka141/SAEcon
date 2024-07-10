@@ -1,0 +1,3 @@
+Id,PageTitle,TypeName,SectionId,SectionName,TsCode,MeasureName,TheValue,ValueDate,FormatNumber,FormatDate,SectionSequence,UnitOfMeasure,PublishingAgency,PercChange,PercChangeFormat
+IMFPO,Economic and Financial Data for South Africa,SDDS POPULATION,IMFPOPO,Population,LABD051A,POPULATION (mid-year estimates as at 30 June),59964.917,2021-12-31T00:00:00,0,yyyy,1,'000,STATS SA,,0.00
+IMFPO,Economic and Financial Data for South Africa,SDDS POPULATION,IMFPOPO,Population,LABD051A,POPULATION (mid-year estimates as at 30 June),60604.992,2022-12-31T00:00:00,0,yyyy,1,'000,STATS SA,,0.00

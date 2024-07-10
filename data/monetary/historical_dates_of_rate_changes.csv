@@ -1,0 +1,3 @@
+Id,PageTitle,TypeName,SectionId,SectionName,TsCode,MeasureName,TheValue,ValueDate,Description,FormatNumber,FormatDate,SectionSequence,ItemSequence,UpInd
+HDC,Historical dates of change,Historical dates of change,HDCRTS,Historical dates of rates changes ,MRDPRIME,Dates of change in the prime lending rate,11.75,2023-05-26T00:00:00,Dates of change in the prime lending rate,0.00,yyyy-MM-dd,1,1,1
+HDC,Historical dates of change,Historical dates of change,HDCRTS,Historical dates of rates changes ,MRDREPOR,Dates of change in the repurchase rate,8.25,2023-05-26T00:00:00,Dates of change in the repurchase rate,0.00,yyyy-MM-dd,1,2,1

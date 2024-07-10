@@ -1,0 +1,25 @@
+Name,SectionId,SectionName,TimeseriesCode,Date,Value,UpDown,FormatNumber,FormatDate
+Repo rate,CMRMMR,Money Market Rates,MMRD002A,2024-06-25,8.25,0,0.00,yyyy-MM-dd
+Sabor,CMRMMR,Money Market Rates,MMRD851A,2024-06-24,8.196,-1,0.000,yyyy-MM-dd
+Zaronia,CMRMMR,Money Market Rates,MMRD855A,2024-06-24,8.134,1,0.000,yyyy-MM-dd
+Overnight FX rate,CMRMMR,Money Market Rates,MMRD853A,2024-06-24,8.1,1,0.000,yyyy-MM-dd
+Treasury bills - 91 day (tender rates),CMRMMR,Money Market Rates,MMRD203A,2024-06-24,8.52,-1,0.00,yyyy-MM-dd
+Treasury bills - 182 day (tender rates),CMRMMR,Money Market Rates,MMRD206A,2024-06-24,8.65,-1,0.00,yyyy-MM-dd
+Treasury bills - 273 day (tender rates),CMRMMR,Money Market Rates,MMRD209A,2024-06-24,8.47,-1,0.00,yyyy-MM-dd
+Treasury bills - 364 day (tender rates),CMRMMR,Money Market Rates,MMRD212A,2024-06-24,8.28,-1,0.00,yyyy-MM-dd
+NCD's - 3 months (closing rates),CMRMMR,Money Market Rates,MMRD303A,2024-06-24,8.35,0,0.00,yyyy-MM-dd
+NCD's - 6 months (closing rates),CMRMMR,Money Market Rates,MMRD306A,2024-06-24,8.57,0,0.00,yyyy-MM-dd
+NCD's - 12 months (closing rates),CMRMMR,Money Market Rates,MMRD312A,2024-06-24,8.9,-1,0.00,yyyy-MM-dd
+Jibar - 3 months,CMRMMR,Money Market Rates,MMRD403A,2024-06-24,8.35,0,0.00,yyyy-MM-dd
+Prime lending rate,CMRMMR,Money Market Rates,MMRD001A,2024-06-25,11.75,0,0.00,yyyy-MM-dd
+8.00% 2030 (R2030) (closing yields),CMRCPM,Capital Market Rates,MMRD708A,2024-06-24,9.8,1,0.00,yyyy-MM-dd
+"10,5% 2026 (R186) (closing yields)",CMRCPM,Capital Market Rates,MMRD704A,2024-06-24,8.695,1,0.00,yyyy-MM-dd
+5-10 years (daily average bond yields),CMRCPM,Capital Market Rates,CMJD003A,2024-06-24,9.78,1,0.00,yyyy-MM-dd
+10 years and longer (daily average bond yields),CMRCPM,Capital Market Rates,CMJD004A,2024-06-24,11.3,1,0.00,yyyy-MM-dd
+Nominal effective exchange rate,CMREXC,Exchange rates,EER4504A,2024-06-25,80.2953,-1,0.00,yyyy-MM-dd
+Rand per US Dollar,CMREXC,Exchange rates,EXCX135D,2024-06-25,18.1416,1,0.0000,yyyy-MM-dd
+Rand per British Pound,CMREXC,Exchange rates,EXCZ001D,2024-06-25,23.0353,1,0.0000,yyyy-MM-dd
+Rand per Euro,CMREXC,Exchange rates,EXCZ002D,2024-06-25,19.4677,1,0.0000,yyyy-MM-dd
+Rand per Japanese Yen,CMREXC,Exchange rates,EXCZ120D,2024-06-25,0.1137,1,0.0000,yyyy-MM-dd
+US Dollar,CMRLGP,London gold price per fine ounce (average of the day's am and pm price fixings),GDPL201D,2024-06-24,2327.975,-1,0.00,yyyy-MM-dd
+Rand,CMRLGP,London gold price per fine ounce (average of the day's am and pm price fixings),GDPL203D,2024-06-24,42307.203,1,0.00,yyyy-MM-dd
