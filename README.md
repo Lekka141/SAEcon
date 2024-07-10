@@ -13,7 +13,7 @@ SAEcon provides an intuitive platform for exploring and understanding South Afri
 
 ## Screenshot
 
-[SAEcon Screenshot](../static/images/screenshot.png)
+[SAEcon Screenshot](static/images/screenshot.png)
 
 ## Installation
 
