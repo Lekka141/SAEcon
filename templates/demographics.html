@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Demographics</h2>
+<p><strong>Definition:</strong> Demographics refer to statistical data relating to the population and particular groups within it. These statistics provide insights into the population structure, growth, distribution, and trends, which are crucial for planning and policy-making.</p>
+
+<h3>Importance:</h3>
+<p>Understanding demographic trends is essential for government planning, economic forecasting, and social services. It helps in the allocation of resources, development of policies, and implementation of programs targeting specific population groups.</p>
+
+<p>{{ source }}</p>
+
+<h3>Metrics and Visualizations:</h3>
+
+<h4>Population Growth (Annual %)</h4>
+<p><strong>Definition:</strong> Population growth rate indicates the annual increase in the population, expressed as a percentage. It is calculated based on the birth rate, death rate, and net migration rate.</p>
+<p><strong>Explanation:</strong> The line chart below shows the annual population growth rate. This visualization helps to understand the population dynamics and trends over time, indicating periods of rapid growth or decline.</p>
+<div id="graph_population_growth"></div>
+
+<h4>Population Density (People per sq km)</h4>
+<p><strong>Definition:</strong> Population density measures the number of people living per square kilometer of land area. It provides an indication of how crowded or sparsely populated an area is.</p>
+<p><strong>Explanation:</strong> The bar chart below depicts the population density over the years. This visualization helps to assess the spatial distribution of the population and the pressure on land resources.</p>
+<div id="graph_population_density"></div>
+
+<h4>Urban Population (% of Total Population)</h4>
+<p><strong>Definition:</strong> Urban population refers to the percentage of the total population living in urban areas. This metric highlights the degree of urbanization in a country.</p>
+<p><strong>Explanation:</strong> The line chart below illustrates the urban population percentage over the years. This visualization helps to understand the urbanization trends and the migration from rural to urban areas.</p>
+<div id="graph_urban_population"></div>
+
+<h4>Population by Age Group</h4>
+<p><strong>Definition:</strong> Population by age group divides the total population into different age categories, such as 0-14 years, 15-64 years, and 65 years and above. It provides insights into the age structure of the population.</p>
+<p><strong>Explanation:</strong> The stacked bar chart below shows the distribution of the population by age groups. This visualization helps to understand the age composition and dependency ratios within the population.</p>
+<div id="graph_population_age_groups"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Plotly.newPlot('graph_population_growth', JSON.parse('{{ graph_population_growth | safe }}'));
+        Plotly.newPlot('graph_population_density', JSON.parse('{{ graph_population_density | safe }}'));
+        Plotly.newPlot('graph_urban_population', JSON.parse('{{ graph_urban_population | safe }}'));
+        Plotly.newPlot('graph_population_age_groups', JSON.parse('{{ graph_population_age_groups | safe }}'));
+    });
+</script>
+{% endblock %}
