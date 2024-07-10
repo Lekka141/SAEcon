@@ -7,7 +7,7 @@ SAEcon is a web-based application designed to visualize various economic metrics
 SAEcon provides an intuitive platform for exploring and understanding South Africa's economic data. The interactive visualizations make it easy to analyze trends and make informed decisions based on the latest available data.
 
 - **Deployed Site**: [SAEcon Live](https://saeconflaskapp.azurewebsites.net/)
-- **Final Project Blog Article**: [SAEcon: Visualizing South Africa's Economy](http://example.com/blog)
+- **Final Project Blog Article**: [SAEcon: Visualizing South Africa's Economy](https://www.linkedin.com/pulse/saecon-visualizing-south-africas-economic-indicators-keegan-joubert-apsef/)
 - **Authors**:
   - [Keegan Joubert](https://www.linkedin.com/in/keegan-joubert/)
 
