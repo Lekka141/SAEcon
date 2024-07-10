@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Environmental Indicators</h2>
+<p><strong>Definition:</strong> Environmental indicators are metrics used to measure the state of the environment, track changes over time, and assess the impact of human activities on natural resources and ecosystems.</p>
+
+<h3>Importance:</h3>
+<p>Environmental indicators help policymakers, researchers, and the public understand the health of the environment. They are essential for monitoring environmental quality, informing policy decisions, and promoting sustainable development.</p>
+
+<p>{{ source }}</p>
+
+<h3>Metrics and Visualizations:</h3>
+
+<h4>CO2 Emissions (kt)</h4>
+<p><strong>Definition:</strong> CO2 emissions refer to the release of carbon dioxide into the atmosphere from burning fossil fuels, industrial processes, and other sources. It is measured in kilotons (kt).</p>
+<p><strong>Explanation:</strong> The line chart below shows the trend in CO2 emissions over the years. This visualization helps to understand the contribution of different sectors to greenhouse gas emissions and track progress in reducing emissions.</p>
+<div id="graph_co2_emissions"></div>
+
+<h4>Renewable Internal Freshwater Resources (per capita)</h4>
+<p><strong>Definition:</strong> Renewable internal freshwater resources refer to the total volume of internal freshwater generated through the water cycle, divided by the population. It is measured in cubic meters per capita.</p>
+<p><strong>Explanation:</strong> The bar chart below illustrates the availability of freshwater resources per capita. This visualization helps to assess water availability and stress levels in the population.</p>
+<div id="graph_freshwater_resources"></div>
+
+<h4>Protected Areas (% of Total Territorial Area)</h4>
+<p><strong>Definition:</strong> Protected areas are regions designated for the conservation of nature and biodiversity, expressed as a percentage of the total territorial area.</p>
+<p><strong>Explanation:</strong> The bar chart below shows the percentage of land and marine areas protected over the years. This visualization helps to understand the efforts and progress in conservation and biodiversity protection.</p>
+<div id="graph_protected_areas"></div>
+
+<h4>Air Pollution (PM2.5)</h4>
+<p><strong>Definition:</strong> PM2.5 refers to fine particulate matter with a diameter of less than 2.5 micrometers. It is a significant indicator of air pollution and poses health risks when present at high levels.</p>
+<p><strong>Explanation:</strong> The line chart below displays the annual exposure to PM2.5 levels. This visualization helps to understand air quality trends and the effectiveness of measures to reduce air pollution.</p>
+<div id="graph_air_pollution"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Plotly.newPlot('graph_co2_emissions', JSON.parse('{{ graph_co2_emissions | safe }}'));
+        Plotly.newPlot('graph_freshwater_resources', JSON.parse('{{ graph_freshwater_resources | safe }}'));
+        Plotly.newPlot('graph_protected_areas', JSON.parse('{{ graph_protected_areas | safe }}'));
+        Plotly.newPlot('graph_air_pollution', JSON.parse('{{ graph_air_pollution | safe }}'));
+    });
+</script>
+{% endblock %}
