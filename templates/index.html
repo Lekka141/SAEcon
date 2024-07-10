@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South African Economy Visualiser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .feature-image {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Adjust the height as needed */
+            margin: 0 auto; /* Center the images */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        <h1>South African Economy Visualizer</h1>
+    </header>
+    <nav>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/gdp">GDP</a></li>
+            <li class="nav-item"><a class="nav-link" href="/inflation">Inflation</a></li>
+            <li class="nav-item"><a class="nav-link" href="/trade">Trade</a></li>
+            <li class="nav-item"><a class="nav-link" href="/fiscal">Fiscal</a></li>
+            <li class="nav-item"><a class="nav-link" href="/monetary">Monetary</a></li>
+            <li class="nav-item"><a class="nav-link" href="/investment">Investment</a></li>
+            <li class="nav-item"><a class="nav-link" href="/poverty">Poverty</a></li>
+            <li class="nav-item"><a class="nav-link" href="/health">Health</a></li>
+            <li class="nav-item"><a class="nav-link" href="/environment">Environment</a></li>
+            <li class="nav-item"><a class="nav-link" href="/demographics">Demographics</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <section id="intro">
+            <img src="{{ url_for('static', filename='images/cover_image.png') }}" alt="Cover Image" class="feature-image">
+            <h2>Welcome to SAEcon</h2>
+            <p>Your comprehensive source for analyzing South Africa's economic metrics.</p>
+        </section>
+
+        <section id="features">
+            <h2>Key Features</h2>
+
+            <div class="feature">
+                <img src="{{ url_for('static', filename='images/feature_1.png') }}" alt="GDP Visualization" class="feature-image">
+                <h3>GDP Analysis</h3>
+                <p><strong>Detailed Overview:</strong> Our project includes an in-depth analysis of South Africa's GDP metrics. GDP, or Gross Domestic Product, is a broad measure of a nation's overall economic activity. This feature allows users to explore various GDP metrics such as GDP growth, GDP per capita, and GDP per unit of energy use. The visualizations help in understanding the economic performance and productivity of South Africa over time. The charts are interactive, allowing users to delve deeper into specific data points.</p>
+            </div>
+
+            <div class="feature">
+                <img src="{{ url_for('static', filename='images/feature_2.png') }}" alt="Inflation Analysis" class="feature-image">
+                <h3>Inflation Analysis</h3>
+                <p><strong>In-depth Insights:</strong> Our inflation analysis feature provides a clear picture of the inflation trends in South Africa. Inflation, measured as the percentage change in the price level of goods and services, is a critical indicator of economic health. This section includes interactive charts that track changes in inflation rates over time, making it easier to identify periods of high inflation or deflation. Users can understand how inflation affects purchasing power and the overall economic environment.</p>
+            </div>
+
+            <div class="feature">
+                <img src="{{ url_for('static', filename='images/feature_3.png') }}" alt="Trade Analysis" class="feature-image">
+                <h3>Trade Analysis</h3>
+                <p><strong>Comprehensive Examination:</strong> This feature offers a thorough analysis of South Africa's trade metrics. Trade analysis covers various aspects such as exports, imports, and trade balance. By exploring these metrics, users can gain insights into South Africa's trade dynamics and its position in the global market. The visualizations illustrate trends in trade activities, helping to understand the impact of international trade on the country's economy.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About This Project</h2>
+            <p>I wanted to learn about each sector of the economy and used this as a valuable project to gain a deeper understanding of these topics. This project serves as a comprehensive tool for analyzing and visualizing South Africa's economic data, providing users with valuable insights into the country's economic performance and trends.</p>
+            <p>This project was developed as a Portfolio Project for Holberton School.</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/keegan-joubert">LinkedIn</a></li>
+                <li><a href="https://github.com/Lekka141">GitHub</a></li>
+                <li><a href="https://twitter.com/141Lekka73287">Twitter</a></li>
+            </ul>
+            <p>View the project repository on <a href="https://github.com/Lekka141/SAEcon">GitHub</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 South African Economy Visualizer. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</body>
+</html>
