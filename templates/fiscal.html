@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Fiscal Indicators</h2>
+<p><strong>Definition:</strong> Fiscal indicators are metrics used to measure the financial health and policies of a government, including revenue collection, expenditure, and debt levels.</p>
+
+<h3>Importance:</h3>
+<p>Fiscal indicators help policymakers, economists, and analysts understand the government's financial position, assess fiscal sustainability, and inform policy decisions.</p>
+
+<p>{{ source }}</p>
+
+<h3>Metrics and Visualizations:</h3>
+
+<h4>Central Government Debt (% of GDP)</h4>
+<p><strong>Definition:</strong> Central government debt refers to the total amount of debt incurred by the central government, expressed as a percentage of the Gross Domestic Product (GDP).</p>
+<p><strong>Explanation:</strong> The line chart below shows the trend in central government debt as a percentage of GDP over the years. This visualization helps to understand the government's debt levels relative to the size of the economy.</p>
+<div id="graph_govt_debt"></div>
+
+<h4>Government Revenue (% of GDP)</h4>
+<p><strong>Definition:</strong> Government revenue includes all income received by the government from taxes, fees, and other sources, expressed as a percentage of GDP.</p>
+<p><strong>Explanation:</strong> The line chart below illustrates the trend in government revenue as a percentage of GDP. This visualization helps to understand the government's ability to generate income relative to the economy's size.</p>
+<div id="graph_govt_revenue"></div>
+
+<h4>Government Expenditure (% of GDP)</h4>
+<p><strong>Definition:</strong> Government expenditure includes all spending by the government on goods, services, and obligations, expressed as a percentage of GDP.</p>
+<p><strong>Explanation:</strong> The line chart below shows the trend in government expenditure as a percentage of GDP. This visualization helps to understand the government's spending patterns relative to the economy's size.</p>
+<div id="graph_govt_expenditure"></div>
+
+<h4>Fiscal Balance (% of GDP)</h4>
+<p><strong>Definition:</strong> The fiscal balance is the difference between government revenue and expenditure, expressed as a percentage of GDP. A positive balance indicates a surplus, while a negative balance indicates a deficit.</p>
+<p><strong>Explanation:</strong> The line chart below displays the fiscal balance as a percentage of GDP over the years. This visualization helps to understand the government's fiscal health and sustainability.</p>
+<div id="graph_fiscal_balance"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Plotly.newPlot('graph_govt_debt', JSON.parse('{{ graph_govt_debt | safe }}'));
+        Plotly.newPlot('graph_govt_revenue', JSON.parse('{{ graph_govt_revenue | safe }}'));
+        Plotly.newPlot('graph_govt_expenditure', JSON.parse('{{ graph_govt_expenditure | safe }}'));
+        Plotly.newPlot('graph_fiscal_balance', JSON.parse('{{ graph_fiscal_balance | safe }}'));
+    });
+</script>
+{% endblock %}
