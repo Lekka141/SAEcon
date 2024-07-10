@@ -1,168 +1,72 @@
-# South African Economy Visualizer (SAEcon)
+# SAEcon - South Africa Economic Indicators Visualization
 
-## Overview
+SAEcon is a web-based application designed to visualize various economic metrics of South Africa. The application utilizes Flask, Pandas, and Plotly Express to display interactive charts and graphs, providing insights into different economic indicators.
 
-SAEcon is a web-based application designed to visualize key economic metrics of South Africa. The platform provides interactive charts and detailed explanations across various economic categories such as GDP, Demographics, Fiscal Health, Inflation, Trade, and more.
+## Introduction
 
-## Table of Contents
+SAEcon provides an intuitive platform for exploring and understanding South Africa's economic data. The interactive visualizations make it easy to analyze trends and make informed decisions based on the latest available data.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Routes](#routes)
-- [Templates](#templates)
-- [Data Sources](#data-sources)
-- [Progress](#progress)
-- [Challenges](#challenges)
-- [Screenshots](#screenshots)
+- **Deployed Site**: [SAEcon Live](https://saeconflaskapp.azurewebsites.net/)
+- **Final Project Blog Article**: [SAEcon: Visualizing South Africa's Economy](http://example.com/blog)
+- **Authors**:
+  - [Keegan Joubert](https://www.linkedin.com/in/keegan-joubert/)
+
+## Screenshot
+
+![SAEcon Screenshot](./static/images/screenshot.png)
 
 ## Installation
 
-To set up the project locally, follow these steps:
+To set up the application, follow these steps:
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/SAEcon.git
-    cd SAEcon
-    ```
+1. **Clone the Repository**:   
+- git clone https://github.com/Lekka141/SAEcon
 
-2. Create a virtual environment:
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
+2. **Navigate to the Project Directory**:
+- cd SAEcon
 
-3. Install the required packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
+3. **Install Dependencies**:
 
-4. Run the application:
-    ```bash
-    flask run
-    ```
+- pip install -r requirements.txt
 
-## Usage
+4. **Run the Application**:
+- flask run
 
-1. **Home Page**: Access the home page at `http://127.0.0.1:5000/`. It provides an overview of the platform and navigation to different economic categories.
-2. **Category Pages**: Navigate to specific economic categories via the navbar. Each category page includes interactive charts and detailed explanations of key metrics.
+5. **Usage**
 
-## Routes
+Once the application is running, navigate to http://127.0.0.1:5000 in your web browser to access the dashboard. Use the navigation menu to explore different economic indicators such as GDP, Inflation, Trade, Fiscal, Monetary, Investment, Poverty, Health, Environment, and Demographics.
+Contributing
 
-The application defines routes for different economic categories, each with its own blueprint and corresponding template:
+## Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-- `/`: Home page
-- `/demographics`: Demographics data
-- `/environment`: Environmental sustainability
-- `/fiscal`: Fiscal health
-- `/gdp`: GDP
-- `/health`: Health metrics
-- `/inflation`: Inflation data
-- `/investment`: Investment data
-- `/monetary`: Monetary policy
-- `/poverty`: Poverty and inequality
-- `/trade`: Trade data
+    Fork the repository
+    Create your feature branch (git checkout -b feature/AmazingFeature)
+    Commit your changes (git commit -m 'Add some AmazingFeature')
+    Push to the branch (git push origin feature/AmazingFeature)
+    Open a Pull Request.
 
-### Route Details
+## Licensing
 
-#### `/demographics`
-- **Description**: Provides visualizations for demographic data.
-- **Metrics**:
-  - Population Growth Rate
-  - Population Density (People per Sq Km)
-  - Urban Population (% of Total)
+This project is licensed under the MIT License. See the LICENSE file for more details.
+Technical Details and Project Story
 
-#### `/environment`
-- **Description**: Visualizes environmental sustainability metrics.
-- **Metrics**:
-  - CO2 Emissions (Metric Tons per Capita)
-  - Renewable Energy Consumption (% of Total)
-  - Forest Area (% of Land Area)
+## The idea:
 
-#### `/fiscal`
-- **Description**: Displays fiscal health indicators.
-- **Metrics**:
-  - Government Debt (% of GDP)
-  - Government Revenue (Current USD)
-  - Government Expenditure (Current USD)
-  - Fiscal Balance
+SAEcon started as a vision to simplify the understanding of South Africa's complex economic landscape. Inspired by the need for accessible data visualization tools, this project aims to bring clarity to the vast amounts of economic data available.
+Challenges and Solutions
 
-#### `/gdp`
-- **Description**: Shows GDP-related metrics.
-- **Metrics**:
-  - GDP (Current USD)
-  - GDP Growth Rate
-  - GDP Per Capita (Current USD)
-  - GDP Per Unit of Energy Use
-  - GDP Deflator
+One of the main challenges was handling the large and diverse datasets. We leveraged the power of Pandas for data manipulation and Plotly Express for creating interactive and visually appealing charts. Flask was chosen as the web framework for its simplicity and robustness.
+Future Iterations
 
-#### `/health`
-- **Description**: Provides visualizations for health data.
-- **Metrics**:
-  - Life Expectancy at Birth
-  - Mortality Rate
-  - Health Expenditure (% of GDP)
+## In future iterations, we plan to:
 
-#### `/inflation`
-- **Description**: Visualizes inflation data.
-- **Metrics**:
-  - Consumer Price Index (CPI)
-  - GDP Deflator
-  - Inflation Rate (Annual %)
+- Add more economic indicators and data sources.
+- Improve the interactivity and usability of the charts.
+- Implement user authentication to save and customize dashboard settings.
 
-#### `/investment`
-- **Description**: Displays investment metrics.
-- **Metrics**:
-  - Gross Capital Formation
-  - Foreign Direct Investment (FDI)
-  - Investment as a Percentage of GDP
+## Behind the Scenes
 
-#### `/monetary`
-- **Description**: Provides visualizations for monetary policy data.
-- **Metrics**:
-  - Interest Rates
-  - Money Supply
-  - Inflation Rate
+Creating SAEcon was a journey filled with learning and growth. From dealing with data inconsistencies to optimizing the performance of the visualizations, each step was a valuable experience. The project showcases not just technical skills but also the ability to think critically and solve complex problems.
+Conclusion
 
-#### `/poverty`
-- **Description**: Shows metrics related to poverty and inequality.
-- **Metrics**:
-  - Poverty Gap at $2.15/day
-  - Poverty Gap at $3.65/day
-  - Poverty Gap at $6.85/day
-  - Poverty Headcount Ratio at $2.15/day
-  - Poverty Headcount Ratio at $3.65/day
-  - Poverty Headcount Ratio at $6.85/day
-  - Gini Index
-
-#### `/trade`
-- **Description**: Displays trade-related metrics.
-- **Metrics**:
-  - Exports of Goods and Services (Current USD)
-  - Imports of Goods and Services (Current USD)
-  - Trade Balance
-  - Trade as a Percentage of GDP
-
-## Templates
-
-Templates are located in the `templates` directory. Each category has its own template extending from the base template. The base template includes the common layout and navigation structure.
-
-### Template Details
-
-- **base.html**: The base template containing the common layout and navigation.
-- **index.html**: The home page template.
-- **demographics.html**: Template for demographics visualizations.
-- **environment.html**: Template for environmental sustainability visualizations.
-- **fiscal.html**: Template for fiscal health visualizations.
-- **gdp.html**: Template for GDP visualizations.
-- **health.html**: Template for health metrics visualizations.
-- **inflation.html**: Template for inflation visualizations.
-- **investment.html**: Template for investment data visualizations.
-- **monetary.html**: Template for monetary policy visualizations.
-- **poverty.html**: Template for poverty and inequality visualizations.
-- **trade.html**: Template for trade data visualizations.
-- **404.html**: Custom 404 error page template.
-- **500.html**: Custom 500 error page template.
-
-## Data Sources
-
-Data files are located in the `data` directory, organized by category. CSV files are used for loading data into the application. Ensure the data files are correctly formatted and placed in the appropriate subdirectories.
+SAEcon is more than just an application; it's a tool designed to empower users with knowledge and insights. We hope that this project inspires others to explore the world of data visualization and economic analysis.
