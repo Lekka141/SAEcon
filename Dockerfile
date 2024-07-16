@@ -36,4 +36,4 @@ COPY . .
 EXPOSE 80
 
 # Command to run the app
-CMD ["gunicorn", "--workers=3", "--bind=0.0.0.0:80", "--timeout=120", "app:app"]
+CMD ["gunicorn", "--workers=6", "--bind=0.0.0.0:80", "--timeout=180", "app:app"]
